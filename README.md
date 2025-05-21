@@ -114,19 +114,11 @@ El sitio es altamente personalizable:
 - Colores principales en Tailwind config
 - Imágenes de platos
 - Información del restaurante
-- Efecto de sonido y animaciones
 
 ## 🤝 Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, abre un issue o pull request para sugerencias o mejoras.
 
-## 📄 Licencia
-
-[MIT](LICENSE)
-
-## 👨‍💻 Desarrollador
-
-Desarrollado con ❤️ por [Tu Nombre](https://github.com/tu-usuario)
 
 ---
 
