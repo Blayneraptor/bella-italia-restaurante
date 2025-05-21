@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <radialGradient id="pizzaGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#F2D2A9" />
+      <stop offset="70%" style="stop-color:#E8B571" />
+      <stop offset="100%" style="stop-color:#D49B3A" />
+    </radialGradient>
+    <radialGradient id="crustGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#D49B3A" />
+      <stop offset="70%" style="stop-color:#C68C2F" />
+      <stop offset="100%" style="stop-color:#A67019" />
+    </radialGradient>
+  </defs>
+  <!-- Crust -->
+  <circle cx="250" cy="250" r="240" fill="url(#crustGradient)" />
+  <!-- Base -->
+  <circle cx="250" cy="250" r="220" fill="url(#pizzaGradient)" />
+  <!-- Sauce -->
+  <circle cx="250" cy="250" r="210" fill="#E14B32" opacity="0.85" />
+  <!-- Cheese -->
+  <circle cx="250" cy="250" r="210" fill="#FBE18F" opacity="0.4" />
+</svg>

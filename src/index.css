@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-light text-dark;
+  }
+
+  :root {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px; /* Adjust based on your navbar height */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply py-2 px-6 font-medium rounded-lg transition-all duration-100 inline-flex items-center justify-center shadow-md;
+    @apply hover:shadow-lg transform hover:-translate-y-1 active:translate-y-0 active:shadow;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-opacity-90;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-opacity-90;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary hover:bg-primary hover:text-white;
+  }
+
+  .navbar-link {
+    @apply text-lg font-medium hover:text-primary transition-all duration-100 cursor-pointer select-none relative;
+  }
+
+  .navbar-link::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-200;
+  }
+
+  .navbar-link:hover::after {
+    @apply w-full;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-serif mb-4 relative;
+  }
+
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-0 top-12 left-0 w-20 h-1 bg-accent;
+  }
+}
